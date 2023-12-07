@@ -1,0 +1,83 @@
+
+.mainBannerContent{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    height: 100%;
+}
+
+.leftSideMainBannerContent{
+    justify-content: left;
+    color: white;
+    width: 950px;
+    margin-left:5.5rem;
+    margin-right: 34.5rem;
+    font-size: 45px;
+    font-family: fantasy;
+    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000; /* Borde negro */
+}
+
+.leftSideMainBannerContent h3{
+    color: #00BCD4;
+    margin-bottom: -50px;
+    font-size: 25px;
+    font-family: fantasy;
+    text-shadow: -2px -2px 0 #000, 2px -2px 0 #000, -2px 2px 0 #000, 2px 2px 0 #000; /* Borde negro */
+}
+
+.rightSideMainBannerContent{
+    color: white;
+    text-shadow: -2px -2px 0 #000, 2px -2px 0 #000, -2px 2px 0 #000, 2px 2px 0 #000; /* Borde negro */
+    width: 1400px;
+    margin-right: 5.5rem;
+    padding-bottom: 2.5rem;
+}
+.rightSideMainBannerContent h3{
+    background: rgba(0, 0, 0, 0.5); /* Fondo semitransparente negro */
+    padding: 5px; /* Espacio alrededor del texto */
+    color: white;
+    text-shadow: -2px -2px 0 #000, 2px -2px 0 #000, -2px 2px 0 #000, 2px 2px 0 #000; /* Borde negro */
+}
+
+.mainBannerContainer{
+    width: 100%;
+    margin: 0;
+    height: 500px;
+    background-image: url('../../images/bannerv1.png');
+    background-size: 1900px 800px;
+    background-position: 0px -70px;
+}
+.button-contact{
+    background-color: #f0ad4e; /* Un color anaranjado, puedes elegir el que prefieras */
+    color: white;
+    border-radius: 10px; /* Bordes redondeados */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra suave */
+    transition: all 0.3s; /* Transición suave */
+    font-size: 25px;
+    font-family: fantasy;
+    padding: 10px 15px;
+     position: relative; /* Necesario para el posicionamiento del pseudo-elemento */
+    overflow: hidden; /* Mantiene el pseudo-elemento dentro de los bordes del botón */
+    z-index: 1; /* Asegura que el texto esté sobre la animación */
+}
+.button-contact:hover{
+    background-color: #00BCD4; /* Un color cian, moderno y tecnológico */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3); 
+    color: #000;/* Sombra más pronunciada */
+}
+
+.button-contact::before {
+    content: '';
+    position: absolute;
+    left: 0; /* Inicialmente fuera del botón */
+    top: -100%;
+    width: 100%;
+    height: 100%;
+    background: url('../../images/binaries.png');
+    background-size: 400px 400px; /* Crea un brillo que se desplaza */
+    transition: all 1.5s;
+}
+
+.button-contact:hover::before {
+    top: 100%; /* Mueve el brillo a través del botón */
+}

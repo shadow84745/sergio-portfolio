@@ -1,0 +1,79 @@
+.section-content-container {
+  width: 100%;
+  margin: 0;
+  background-color: #000;
+  height: 500px;
+}
+
+.content-section {
+  display: flex;
+  flex-direction: row;
+  height: 100%;
+  align-items: center;
+  justify-content: center;
+  gap: 90px;
+  width: 100%;
+  /* Ajusta este valor según la separación que desees entre los ítems */
+}
+
+.content-text {
+  font-size: 20px;
+  color: #fff;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  width: 100%;
+  margin-left: 50px;
+}
+
+.text { 
+  font-size: 25px;
+  color: #fff;
+  font-weight: bold;
+}
+
+.content-image {
+  font-size: 20px;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  margin-right: 50px;
+  justify-content: center;
+}
+
+.box {
+  width: 230px;
+  height: 230px;
+  border-radius: 50%;
+  background: #fff;
+}
+
+.box h3 {
+  color: blue;
+}
+
+.animated-image {
+  width: 230px;
+}
+
+/* Añade estas reglas en tu archivo CSS */
+
+.box:hover {
+  cursor: pointer;
+  box-shadow: 0px 0px 15px 5px rgba(0, 0, 0, 0.2);
+  /* Sombra al pasar el mouse */
+}
+
+.box:hover img {
+  transform: scale(1.05);
+  /* Ligero aumento de tamaño al pasar el mouse */
+}
+
+.click-instruction {
+  text-align: center;
+  margin-top: 10px;
+  font-style: italic;
+  color: #666;
+}

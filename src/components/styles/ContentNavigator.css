@@ -1,0 +1,41 @@
+.navigator-content{
+    display: flex;
+    flex-direction: row;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+    gap: 90px; /* Ajusta este valor según la separación que desees entre los ítems */
+}
+
+.navigator-container{
+    width: 100%;
+    margin: 0;
+    height: 250px;
+    background-image: url('../../images/contentBackground.png');
+    background-size: cover;
+    background-position: 0px -80px;
+}
+
+.content-item{
+    justify-content: center;
+    display: flex;
+    align-items: center; /* Centra verticalmente */
+    flex-direction: column; /* Organiza los elementos en columna */
+    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000; 
+    color: white;
+}
+
+.item-image{
+    width: 50px;
+    height: 50px;
+}
+
+.image-container{
+    background-color: #f0ad4e;
+    width: 80px;
+    height: 80px;
+    align-items: center; /* Centra verticalmente */
+    display: flex;
+    justify-content: center; /* Centra horizontalmente */
+    border-radius: 100px;
+}
